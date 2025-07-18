@@ -9,22 +9,9 @@
 
 ## Features
 
-- [x] Synthesizable SHA-256 RTL core (`src/sha256_core.v`)
+- [x] Synthesizable SHA-256 RTL core (`src/sha256.v`)
 - [ ] AuthenTree threshold/MPC protocol RTL (coming soon)
 - [ ] Example testbenches and integration scripts
-
-## Directory Structure
-
-repo-root/
-└── src/
-└── sha256/ # Verilog files for SHA-256 core
-├── sha256_core.v
-└── ...
-└── testbench/ # (Optional) Example testbenches
-
-bash
-Copy
-Edit
 
 ## Getting Started
 
