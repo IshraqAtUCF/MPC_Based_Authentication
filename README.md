@@ -41,7 +41,7 @@ Robust: Sensitive to tampering, replay, and DoS attacks.
 If you use this work in academic publications, please cite the original SAFE-SiP paper:
 
 ```
-@inproceedings{10.1145/3716368.3735248,
+@inproceedings{tashdid2025safe,
 author = {Tashdid, Ishraq and Farheen, Tasnuva and Rahman, Sazadur},
 title = {SAFE-SiP: Secure Authentication Framework for System-in-Package Using Multi-party Computation},
 year = {2025},
