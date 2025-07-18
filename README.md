@@ -17,8 +17,8 @@
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/authentree.git
-   cd authentree
+   git clone https://github.com/yourusername/MPC_Based_Authentication.git
+   cd MPC_Based_Authentication
    ```
 
 2. **Synthesize for ASIC/FPGA:**
