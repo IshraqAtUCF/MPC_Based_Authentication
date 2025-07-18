@@ -37,6 +37,48 @@ Low Overhead: Area and power impact is orders of magnitude smaller than recent a
 
 Robust: Sensitive to tampering, replay, and DoS attacks.
 
+### Key Tables
+
+#### Design Area Overhead of AuthenTree
+
+| Design   | Design Area (μm²) | AuthenTree Area (μm²) | Overhead (%) |
+|----------|-------------------|-----------------------|--------------|
+| CVA6     |   345,755         | 6,988.20              | 2.02         |
+| NVDLA    |   541,552         | 7,192.12              | 1.33         |
+| RISC-V   | 1,309,680         | 7,063.03              | 0.54         |
+| Ariane   | 1,431,536         | 7,000.50              | 0.49         |
+| OR1200   | 1,488,384         | 7,108.00              | 0.48         |
+
+#### Area Comparison with Recent Works
+
+| Work                        | LUT Resource | FF    | Area (mm²)   |
+|-----------------------------|-------------|-------|--------------|
+| SECT-HI                     | --          | --    | 5.11         |
+| PQC-HI (Kyber+Dilithium)    | 76,999      | 49,993| --           |
+| PQC-HI (Kyber only)         | 1,842       | 1,634 | --           |
+| SAFE-SiP (κ=64)             | --          | --    | 0.0996       |
+| **AuthenTree**              | **1,740**   | **1054** | **0.0071** |
+
+#### Authentication Latency Comparison
+
+| Work         | Reported Latency  | Notes                     |
+|--------------|-------------------|---------------------------|
+| SECT-HI      | 280 ms            | Serialized                |
+| PQC-HI       | 1–10 ms           | PQC operations            |
+| SAFE-SiP     | ~1 μs             | Parallelizable            |
+| **AuthenTree** | <1 μs           | One-time, parallelizable  |
+
+#### Power Overhead Analysis for AuthenTree
+
+| Design  | Baseline Power (mW) | AuthenTree Power (mW) | Overhead (%) |
+|---------|---------------------|-----------------------|--------------|
+| CVA6    | 12.896              | 0.2357                | 1.83         |
+| NVDLA   | 185.140             | 0.2394                | 0.13         |
+| RISC-V  | 59.164              | 0.2518                | 0.43         |
+| Ariane  | 94.157              | 0.2463                | 0.26         |
+| OR1200  | 106.610             | 0.2485                | 0.23         |
+
+
 ## Citation
 If you use this work in academic publications, please cite the original SAFE-SiP paper:
 
