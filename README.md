@@ -1,4 +1,4 @@
-# AuthenTree & SAFE-SiP: Secure Authentication for Chiplet-Based SiP
+# Secure Authentication for Chiplet-Based SiP
 
 ## Overview
 
